@@ -1,0 +1,62 @@
+
+PROGRAM 1
+
+package day2;
+
+public class exp1 {
+  public static void main(String[] args){
+
+        int number = 29;
+  //checking whether the number is even or odd
+  if (number % 2 == 0)
+           System.out.println(number + " is Even");
+  else
+           System.out.println(number + " is odd");
+   }
+}
+29 is odd
+
+
+PROGRAM 2
+package day2;
+public class exp2 {
+  public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+           System.out.println("Enter the number: ");
+           int num = sc.nextInt();
+           int lastDigit = num%10;
+           System.out.println("The last Digit of the Number is "+lastDigit);
+      }
+  }
+  
+  
+  PROGRAM 3
+  package day2;
+public class exp3 {
+  public static void main(String[] args) {
+     // Read only region end
+        int sum=0;
+        if((input1<10&&input1>0)&&(input2<10&&input2>0))
+            sum=input1+input2;
+        else if(input1<0&&input2<0)
+        {
+            input1=0-input1;
+            input2=0-input2;
+            input1=input1%10;
+            input2=input2%10;
+             sum=input1+input2;
+        }
+        else if(input1<0||input2<0)
+
+        {
+            input1=input1%10;
+            input2=input2%10;
+             sum=input1-input2;
+            sum=sum%10;
+        }
+
+        else
+        {
+            while((input1 >10)||(input2 >10))
+            {
+              input1=input1%10;
